@@ -1,0 +1,23 @@
+Here we'll make some notes based on the Programming in C# course we're undertaking
+
+********* ---- Section 3 - C# Fundamentals ---- *********
+1. Three pillars of OOP
+Encapsulation
+Grouping data and functions into a single component
+Allows selective hiding of data and functionalities
+
+Inheritance
+Enables one class to reuse code from another class
+A single object can possess the functionality of multiple classes
+Provides ability to extend and modify behaviour
+
+Polymorphism
+The result of Encapsulation and Inheritance
+The ability to provide different functionalities for same method name
+
+2. Objects
+An object is a variable containing two things:
+    * The properties that were defined in the class
+    * The abilities defined as methods in the class
+Each object hs its own state (unique collection of data values)
+

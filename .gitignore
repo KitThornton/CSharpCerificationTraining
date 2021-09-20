@@ -1,0 +1,3 @@
+# Here we'll be excluding some files, usual procedure
+/obj
+/bin
