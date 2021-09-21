@@ -7,7 +7,10 @@ namespace CsharpCourse
     {
         public static void Main(string[] args)
         {
+            SectionThree sectionThree = new SectionThree();
+            int test = sectionThree.GetSeniority();
             
+            Console.WriteLine(test);
         }
     }
 }

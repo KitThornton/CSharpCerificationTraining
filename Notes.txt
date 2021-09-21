@@ -21,3 +21,31 @@ An object is a variable containing two things:
     * The abilities defined as methods in the class
 Each object hs its own state (unique collection of data values)
 
+3. Types
+C# is a strongly typed language -> every variable and constant has a specific type
+A type specifies up to four main characteristics of the data that can be stored
+    * The storage space that a var of the type requires
+    * The max and min values that it can represent
+    * The members (methods, fields, events) that it contains
+    * The base type it inherits from
+
+Type-safe -> The compiler makes sure that all operations performed are valid for the type used
+Types:
+    * Value types
+    * Reference types
+Major differences: 
+    * Compile-time rules
+    * Run-time behaviour (memory usage and management)
+
+.NET Framework stores items in memory in two locations:
+    * Value types stored on the Stack 
+        * Each variable is stored on the stack in the order it was created.
+        * Each variable stores its own data.
+        * The amount of memory required to store a value type is a set amount.
+        * When the var is not needed, deleted from the stack. Memory is freed up.
+    * Reference types stored on Stack and Heap
+        * The variable is stored on the stack
+        * The data is stored on the heap
+        * A pointer is used to link the variable in stack and data value on heap
+        
+        
