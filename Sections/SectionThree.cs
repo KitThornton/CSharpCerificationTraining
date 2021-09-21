@@ -38,7 +38,7 @@ namespace CsharpCourse.Sections
         }
         
         // Here we'll explore briefly value and reference types
-        // Here the seniority of test will be returned as 2. Learn.
+        // Here the seniority of test will be returned as 2. Learn about reference type vars.
         public int GetSeniority()
         {
             Employee test = GetEmployee();

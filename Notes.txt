@@ -48,4 +48,16 @@ Major differences:
         * The data is stored on the heap
         * A pointer is used to link the variable in stack and data value on heap
         
+4. Arrays and Collections: Storing multiple related objects
+    * Arrays store multiple variables of the same type in an array data structure
+    * Collections provide a flexible way to work with groups of objects
+        * Unlike arrays, can grow and shrink dynamically
         
+5. StringBuilder
+    * String objects are immutable
+        * They can't be changed after created
+        * All methods and operators that appear to modify just create a new one
+    * StringBuilder class creates a string buffer that provides better performance than
+        looping functions executing many string operations (always deleting an recreating)
+    * 
+
