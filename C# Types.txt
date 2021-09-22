@@ -1,0 +1,16 @@
+********* ---- Section 4 - Working with C# Types ---- *********
+
+1. Properties and fields
+Properties and fields provide objects the ability to store data. Objects have properties.
+Encapsulation -> 
+    * Data stored inside an object should be accessible only to that object
+    * Not directly publicly accessible
+
+A Field provide the ability to store data privately only available from within the object
+Properties provide the ability to R/W data to these private fields
+    * They provide encapsulation for the fields
+    * Data being written to / read can be verified before access granted
+
+A field is a private variable that can only be accessed by code within the object
+A property is used to provide public access to the private fields
+

@@ -10,19 +10,14 @@ namespace CsharpCourse
         {
             SectionThree sectionThree = new SectionThree();
             int test = sectionThree.GetSeniority();
-            
             Console.WriteLine(test);
             
-            // Create a collection that is a list of strings
-            var dogs = new List<string> {"Sausage", "Aussie Shepherd"};
-            dogs.ForEach(Console.WriteLine);
+            SectionFour.Person person = new SectionFour.Person();
+            person.Age = 19;
+            person.Weight = 23;
             
-            // Create an array
-            int[] a1 = new[] { 1, 3, 5, 7, 9, 11 };
-            foreach (int i in a1)
-            {
-                Console.WriteLine(i);
-            }
+            Console.WriteLine("Age: " + person.Age);
+
         }
     }
 }

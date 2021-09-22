@@ -59,5 +59,6 @@ Major differences:
         * All methods and operators that appear to modify just create a new one
     * StringBuilder class creates a string buffer that provides better performance than
         looping functions executing many string operations (always deleting an recreating)
-    * 
+
+
 

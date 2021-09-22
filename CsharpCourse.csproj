@@ -40,10 +40,12 @@
     <ItemGroup>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Sections\SectionFour.cs" />
         <Compile Include="Sections\SectionThree.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include=".gitignore" />
+      <Content Include="C# Types.txt" />
       <Content Include="Notes.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
