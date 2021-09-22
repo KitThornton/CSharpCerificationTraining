@@ -14,3 +14,46 @@ Properties provide the ability to R/W data to these private fields
 A field is a private variable that can only be accessed by code within the object
 A property is used to provide public access to the private fields
 
+2. Methods
+Parameters -> the name and data type of values that must be provided when the mthod is called
+Arguments -> the values passed to the method's parameters
+
+
+3. Access Modifiers
+Public -> Type/member can be accessed by any code in assembly or ass. that references it
+Private -> Type/member can be accessed only by code in the same class/struct
+Protected -> Type/member can be accessed only by code in the same class/struct or by a class that's
+                derived from that class (inheritance)
+Internal -> Type/member can be accessed by any code in the same assembly, but not from another ass.
+Protected internal -> Type/member can be accessed by any code in the ass. or from within a derived 
+                        class in another assembly.
+
+4. Constructors
+    * A method that executes automatically every time an object is instantiated
+    * Same name as the class. If not one, C# will create a default constructor.
+    * They can be overloaded (multiple constructors)
+
+Three main types
+    * Instance
+        -> Used to create and initialise any instance member vars when using new _()
+    * Private
+        -> Prevents other classes from creating instances of this class
+        -> Only nested classes can create an instance of this class
+    * Static
+        -> Used to initialise any static data
+        -> Called only once before the first instance of the class is created or any static 
+            members are referenced
+    
+5. Static
+    * Cannot be instantiated through the new keyword
+    * Only one instance of the object ever exists
+    
+6. Structs
+    * A value type, not a reference type. Similar to a class (fields, properties, methods and events)
+    * Can implement interfaces and are declared through new keyword.
+    * Cannot declare a default constructor (no params)
+    * Cannot inherit from another struct / class
+    * Can be instantiated without new keyword but no constructor is called so all fields must be 
+        initialised before the object can be used.
+    
+    

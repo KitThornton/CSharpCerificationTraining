@@ -11,13 +11,13 @@ namespace CsharpCourse
             SectionThree sectionThree = new SectionThree();
             int test = sectionThree.GetSeniority();
             Console.WriteLine(test);
-            
-            SectionFour.Person person = new SectionFour.Person();
-            person.Age = 19;
-            person.Weight = 23;
-            
+
+            Person person = new Person {Age = 19, Weight = 23};
             Console.WriteLine("Age: " + person.Age);
 
+            var t = Math.Round(35.4);
+
+            AddConstructor addConstructor = new AddConstructor();
         }
     }
 }

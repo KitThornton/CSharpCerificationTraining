@@ -52,6 +52,7 @@ namespace CsharpCourse.Sections
 
     public class Employee
     {
+        // Properties
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Seniority { get; set; }
