@@ -51,4 +51,23 @@ namespace CsharpCourse.Sections
             Console.WriteLine("DoThat has been called");
         }
     }
+
+    public struct StructExample
+    {
+        public int x;
+        public int y;
+
+        // Cannot use a default constructor, must have params
+        public StructExample(int a, int b)
+        {
+            x = a;
+            y = b;
+        }
+
+        public void DoThis()
+        {
+            Console.WriteLine(x+y);
+        }
+
+    }
 }
