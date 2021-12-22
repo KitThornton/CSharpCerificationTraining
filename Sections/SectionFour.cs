@@ -1,73 +1,107 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace CsharpCourse.Sections
 {
     public class SectionFour
     {
-        
-    }
 
-    public class Person
-    {
-        // private field
-        private int _age;
-        private int _weight;
-
-        // properties
-        public int Weight
+        public class Person
         {
-            get => _weight;
-            set => _weight = value;
-        }
+            // private field
+            private int _age;
+            private int _weight;
 
-        public int Age
-        {
-            get => _age;
-            set
+            // properties
+            public int Weight
             {
-                if (value > 0 && value < 65)
+                get => _weight;
+                set => _weight = value;
+            }
+
+            public int Age
+            {
+                get => _age;
+                set
                 {
-                    _age = value;
-                }
-                else
-                {
-                    throw new Exception("Age cannot be over 65 ...");
+                    if (value > 0 && value < 65)
+                    {
+                        _age = value;
+                    }
+                    else
+                    {
+                        throw new Exception("Age cannot be over 65 ...");
+                    }
                 }
             }
         }
-    }
 
-    public class AddConstructor
-    {
-        // Same name, this is the constructor
-        public AddConstructor()
+        public class AddConstructor
         {
-            Console.WriteLine("The constructor has been called");
-            DoThat();
+            // Same name, this is the constructor
+            public AddConstructor()
+            {
+                Console.WriteLine("The constructor has been called");
+                DoThat();
+            }
+
+            public void DoThat()
+            {
+                Console.WriteLine("DoThat has been called");
+            }
         }
 
-        public void DoThat()
+        public struct StructExample
         {
-            Console.WriteLine("DoThat has been called");
-        }
-    }
+            public int x;
+            public int y;
 
-    public struct StructExample
-    {
-        public int x;
-        public int y;
+            // Cannot use a default constructor, must have params
+            public StructExample(int a, int b)
+            {
+                x = a;
+                y = b;
+            }
 
-        // Cannot use a default constructor, must have params
-        public StructExample(int a, int b)
-        {
-            x = a;
-            y = b;
-        }
+            public void DoThis()
+            {
+                Console.WriteLine(x+y);
+            }
 
-        public void DoThis()
-        {
-            Console.WriteLine(x+y);
         }
 
+        public class GenericTypes
+        {
+            public void GenericTypesExample()
+            {
+                // Non-generic list
+                ArrayList list1 = new ArrayList();
+                list1.Add(1);
+                list1.Add(3);
+                list1.Add(5);
+
+                foreach (int x in list1)
+                {
+                    Console.WriteLine(x);
+                }
+                
+                // Generic list
+                List<int> list2 = new List<int>();
+                list2.Add(2);
+                list2.Add(4);
+                list2.Add(6);
+
+                foreach (int x in list2)
+                {
+                    Console.WriteLine(x);
+                }
+            }
+        }
+
+        public void CastingAndConverting()
+        {
+            
+        }
     }
 }

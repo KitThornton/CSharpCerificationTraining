@@ -8,20 +8,28 @@ namespace CsharpCourse
     {
         public static void Main(string[] args)
         {
-            SectionThree sectionThree = new SectionThree();
-            int test = sectionThree.GetSeniority();
-            Console.WriteLine(test);
+            #region SectionThree
+            // SectionThree sectionThree = new SectionThree();
+            // int test = sectionThree.GetSeniority();
+            // Console.WriteLine(test);
+            #endregion
 
-            Person person = new Person {Age = 19, Weight = 23};
+            #region SectionFour
+            /*SectionFour.Person person = new SectionFour.Person {Age = 19, Weight = 23};
             Console.WriteLine("Age: " + person.Age);
-
-            AddConstructor addConstructor = new AddConstructor();
-
-            StructExample structExample2 = new StructExample(6, 7);
-            StructExample structExample;
+            
+            SectionFour.AddConstructor addConstructor = new SectionFour.AddConstructor();
+            
+            SectionFour.StructExample structExample2 = new SectionFour.StructExample(6, 7);
+            SectionFour.StructExample structExample;
             structExample.x = 6;
             structExample.y = 7;
-            structExample.DoThis();
+            structExample.DoThis();*/
+
+            SectionFour.GenericTypes genericTypes = new SectionFour.GenericTypes();
+            genericTypes.GenericTypesExample();
+            
+            #endregion
         }
     }
 }

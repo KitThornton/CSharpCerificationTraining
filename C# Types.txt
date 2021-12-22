@@ -56,4 +56,21 @@ Three main types
     * Can be instantiated without new keyword but no constructor is called so all fields must be 
         initialised before the object can be used.
     
+7. Generic Types
+    * Generics are collections that are type safe at compile time
+    * Can design classes and methods that defer the specification of one or more types until the class/method
+        is declared and instantiated by client code.
+
+8. Casting and Converting
+    * C# variables are statically typed. Data types are assigned to variables and checked at compile time.
+    * This compile-time type checking helps prevent bugs
+    * Two main types of type conversions:
+        * Implicit
+            -> These happen automatically as no risk of data loss (smaller to larger data type)
+        * Explicit 
+            -> Compile-time errors will appear as compiler says that there's potential for data loss and won't
+               perform the conversion unless explicitly stated.
+            -> Larger to smaller data type.
+            -> Called a cast. COnvert is more complex, should be tried only after cast fails.
+                    
     

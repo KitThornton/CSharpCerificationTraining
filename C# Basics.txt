@@ -39,11 +39,13 @@ Major differences:
 
 .NET Framework stores items in memory in two locations:
     * Value types stored on the Stack 
+        * bool, byte, char, decimal, double, enum, float, int etc.
         * Each variable is stored on the stack in the order it was created.
         * Each variable stores its own data.
         * The amount of memory required to store a value type is a set amount.
         * When the var is not needed, deleted from the stack. Memory is freed up.
     * Reference types stored on Stack and Heap
+        * Strings, arrays, class, delegates
         * The variable is stored on the stack
         * The data is stored on the heap
         * A pointer is used to link the variable in stack and data value on heap
