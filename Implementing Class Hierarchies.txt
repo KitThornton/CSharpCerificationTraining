@@ -1,0 +1,8 @@
+********* ---- Section 5 - Implementing Class Hierarchies ---- *********
+
+1. Inheritance 
+Enables you to create new classes that re-use, extend and modify behaviour defined
+in other classes. Basically share functionality. Have covered this before.
+
+
+    

@@ -73,4 +73,7 @@ Three main types
             -> Larger to smaller data type.
             -> Called a cast. COnvert is more complex, should be tried only after cast fails.
                     
+9. Indexers
+    * An indexer provides the ability to access a type using an index similar to an array
     
+

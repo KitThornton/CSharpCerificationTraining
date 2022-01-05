@@ -24,11 +24,22 @@ namespace CsharpCourse
             SectionFour.StructExample structExample;
             structExample.x = 6;
             structExample.y = 7;
-            structExample.DoThis();*/
+            structExample.DoThis();
 
             SectionFour.GenericTypes genericTypes = new SectionFour.GenericTypes();
             genericTypes.GenericTypesExample();
+            */
             
+            SectionFour.Car car = new SectionFour.Car();
+
+            car[1] = "Kia";
+            car[2] = "Mercedes";
+            car[3] = "BMW";
+
+            Console.WriteLine("Car 1 is: " + car[1]);
+            Console.WriteLine("Car 2 is: " + car[2]);
+            Console.WriteLine("Car 3 is: " + car[41]);
+
             #endregion
         }
     }
