@@ -15,6 +15,7 @@ namespace CsharpCourse
             #endregion
 
             #region SectionFour
+            
             /*SectionFour.Person person = new SectionFour.Person {Age = 19, Weight = 23};
             Console.WriteLine("Age: " + person.Age);
             
@@ -28,7 +29,7 @@ namespace CsharpCourse
 
             SectionFour.GenericTypes genericTypes = new SectionFour.GenericTypes();
             genericTypes.GenericTypesExample();
-            */
+            
             
             SectionFour.Car car = new SectionFour.Car();
 
@@ -39,7 +40,24 @@ namespace CsharpCourse
             Console.WriteLine("Car 1 is: " + car[1]);
             Console.WriteLine("Car 2 is: " + car[2]);
             Console.WriteLine("Car 3 is: " + car[41]);
+            */
 
+            #endregion
+
+            #region SectionFive
+            
+            // SectionFive.Patient p = new SectionFive.Patient();
+            // p.Examine();
+            //
+            // SectionFive.Adult a = new SectionFive.Adult();
+            // a.Examine();
+            //
+            // SectionFive.Patient pa = new SectionFive.Adult();
+            // pa.Examine();
+
+            SectionFive.ExtensionMethod em = new SectionFive.ExtensionMethod();
+            em.Example();
+            
             #endregion
         }
     }

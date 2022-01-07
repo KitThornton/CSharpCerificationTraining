@@ -1,8 +1,33 @@
 ********* ---- Section 5 - Implementing Class Hierarchies ---- *********
 
 1. Inheritance 
-Enables you to create new classes that re-use, extend and modify behaviour defined
-in other classes. Basically share functionality. Have covered this before.
+* Enables you to create new classes that re-use, extend and modify behaviour defined
+    in other classes. Basically share functionality. Have covered this before.
+* Multiple methods can be created using the same name as long as the signatures are unique.
+
+2. Overloading
+* We can overload methods based on their unique signatures.
+* Here, signature is its name and the parameters it accepts.
+* So we can have methods with the same name but different parameters -> overloading.
+
+3. Overriding
+* An override method provides new implementation of a member that is inherited from a base class.
+* Overriding a method requires two keywords:
+    * The base method that is being replaces, or overridden, must include virtual.
+    * The overriding method must include override.
+
+4. Extension Methods
+* Add functionality to a class that already exists.
+* Basically a static method inside a static class.
+* 'this' modifier is applied to the first method parameter.
+* The type of this first parameter is the one that is being extended.
+
+5. Interfaces
+* A contract that requires a class to implement certain functionalities.
+* Defines what functionalities a class must provide
+* Does not provide the specific functionalities
+* Classes can't inherit from more than one class (Single inheritance)
+* Classes can implement more than one interface
 
 
     
