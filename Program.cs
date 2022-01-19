@@ -6,6 +6,8 @@ namespace CsharpCourse
 {
     internal class Program
     {
+        delegate void Del (int a, int b);
+
         public static void Main(string[] args)
         {
             #region SectionThree
@@ -45,19 +47,30 @@ namespace CsharpCourse
             #endregion
 
             #region SectionFive
+            /*
+            SectionFive.Patient p = new SectionFive.Patient();
+            p.Examine();
             
-            // SectionFive.Patient p = new SectionFive.Patient();
-            // p.Examine();
-            //
-            // SectionFive.Adult a = new SectionFive.Adult();
-            // a.Examine();
-            //
-            // SectionFive.Patient pa = new SectionFive.Adult();
-            // pa.Examine();
+            SectionFive.Adult a = new SectionFive.Adult();
+            a.Examine();
+            
+            SectionFive.Patient pa = new SectionFive.Adult();
+            pa.Examine();
 
             SectionFive.ExtensionMethod em = new SectionFive.ExtensionMethod();
             em.Example();
+            */
+            #endregion
+
+            #region SectionSix
+
+            SectionSix sectionSix = new SectionSix();
+            Del d = sectionSix.AddNumbers;
+            d += sectionSix.MultiplyNumbers;
+            d += sectionSix.SubtractNumbers;
             
+            d(4, 4);
+
             #endregion
         }
     }

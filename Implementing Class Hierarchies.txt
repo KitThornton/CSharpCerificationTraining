@@ -23,11 +23,17 @@
 * The type of this first parameter is the one that is being extended.
 
 5. Interfaces
-* A contract that requires a class to implement certain functionalities.
+* A contract that requires a class/struct to implement certain functionalities.
 * Defines what functionalities a class must provide
 * Does not provide the specific functionalities
 * Classes can't inherit from more than one class (Single inheritance)
 * Classes can implement more than one interface
+* They can define:
+    * Methods
+    * Properties
+    * Events
+    * Indexers
 
-
-    
+6. IEnumerable
+* An interface that provides a standardized method of accessing collected data
+* The code for the providing enumeration resides in a separate class.

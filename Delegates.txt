@@ -1,0 +1,14 @@
+********* ---- Section 6 - Delegates ---- *********
+
+What is a Delegate?
+* It's a type, like a class, which will define the method signature that can be called.
+* A delegate is an object that knows how to call a method.
+* It will point to the method/function that we want to call
+
+* Create a variable of type delegate.
+* This can then be used to call any method with the stated parameters and return type.
+
+Multicast delegates
+* A single delegate can reference more than one target method.
+* Target method can be added to delegate by using +=, -=.
+ 

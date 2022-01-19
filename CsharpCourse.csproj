@@ -42,12 +42,14 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Sections\SectionFive.cs" />
         <Compile Include="Sections\SectionFour.cs" />
+        <Compile Include="Sections\SectionSix.cs" />
         <Compile Include="Sections\SectionThree.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include=".gitignore" />
       <Content Include="C# Types.txt" />
       <Content Include="C# Basics.txt" />
+      <Content Include="Delegates.txt" />
       <Content Include="Implementing Class Hierarchies.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
